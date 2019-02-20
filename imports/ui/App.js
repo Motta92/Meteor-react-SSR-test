@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from "react-helmet";
 import { withTracker } from 'meteor/react-meteor-data';
 
 import { Blogs } from '../api/blogs.js';
@@ -15,6 +16,11 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Helmet blog list title</title>
+            <link rel="canonical" href="http://google.com" />
+        </Helmet>
         <header>
           <h1>Blog List</h1>
         </header>
