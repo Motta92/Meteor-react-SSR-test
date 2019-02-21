@@ -1,7 +1,9 @@
-import { Meteor } from 'meteor/meteor';
+import '../imports/startup/server';
 
-import '../imports/api/blogs.js';
+// import { Meteor } from 'meteor/meteor';
 
-Meteor.startup(() => {
-  // code to run on server at startup
-});
+// import '../imports/api/blogs/blogs.js';
+
+// Meteor.startup(() => {
+//   // code to run on server at startup
+// });

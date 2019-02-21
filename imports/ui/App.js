@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { Helmet } from "react-helmet";
 import { withTracker } from 'meteor/react-meteor-data';
 
-import { Blogs } from '../api/blogs.js';
+import { Blogs } from '../api/blogs/blogs.js';
 import Blog from './Blog.js';
+
+// export default () => <h1>Its working!</h1>;
 
 // App component - represents the whole app
 class App extends Component {
@@ -13,6 +15,7 @@ class App extends Component {
     ));
   }
 
+  // {this.renderBlogs()}
   render() {
     return (
       <div className="container">
@@ -26,7 +29,7 @@ class App extends Component {
         </header>
 
         <ul>
-          {this.renderBlogs()}
+          <li>test</li>
         </ul>
       </div>
     );
